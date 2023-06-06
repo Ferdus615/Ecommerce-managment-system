@@ -1,20 +1,57 @@
 <!DOCTYPE html>
+<html>
 
-  <body>
-        <h2>Sign Up</h2>
-        <form action="/sign-up" method="post">
-          <label for="name">Name:</label><br>
-          <input type="text" id="name" name="name"><br>
-          <label for="email">Email:</label><br>
-          <input type="email" id="email" name="email"><br>
-          <label for="password">Password:</label><br>
-          <input type="password" id="password" name="password"><br>
-          <button type="submit">Sign Up</button>
+<head>
+  <title>Sign Up</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="logo-box">
+      <img src="photo\Untitled-1.png" alt="Logo" class="logo">
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="log-in.html">Login</a></li>
+      </ul>
+    </nav>
+
+    <div class="text-box">
+      <h1 class="headeing-primary">
+        <span class="headeing-primary-main">Sign Up</span>
+      </h1>
+
+      <div class="signup-form">
+          <form action="log-in.html">
+          <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+          </div>
+          <div class="form-group">
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+          </div>
+          <div class="form-group">
+            <input type="submit" value="Sign Up" class="btn btn-primary">
+          </div>
         </form>
-    </body> 
-    </main>
-    <footer>
-      <p>FUEL IS AS IMPORTANT AS RICE AND COFFEE.</p>
-    </footer>
-  </body>
+      </div>
+    </div>
+  </header>
+  <footer>
+    <p><center>&copy;2023 | Design By- RIS</center></p>
+  </footer>
+</body>
+
 </html>
